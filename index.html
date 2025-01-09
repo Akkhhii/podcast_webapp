@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Webapp</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="wrapper bg-white w-full h-screen">
+    <nav class="navbar w-full  h-[5em] fixed top-0 flex justify-between items-center z-50 px-[0.5em] bg-white border-r-[0.3px] border-l-[0.3px] border-black/60 lg:px-[5em]">
+      <img src="./public/logo.png" alt="" class="w-[5em] h-[5em]" id="logo">
+      <img src="./public/menu.png" alt="" class="w-[3em] h-[3em] mr-[1em]" id="menu">
+      <div class="links w-[30%] flex justify-between items-center font-semibold" id="sociallinks">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Podcasts</a>
+        <a href="">Subscription</a>
+      </div>
+    </nav>
+    <div class="background w-full h-[53em] lg:h-[54.4em] bg-[url('https://img.freepik.com/free-photo/blue-microphone-with-white-speaker-top-it_188544-7741.jpg?t=st=1736427401~exp=1736431001~hmac=1cb9194adf20178043d55d5c3e02d9789bf469892384fe6c67fa27c9cb7881a2&w=1380')] bg-cover bg-top relative top-[5em]">
+      <div class="overlay w-full h-full bg-black/60 lg:flex">
+        <div class="left w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-center items-center gap-[4em] text-white lg:gap-[10em]">
+          <div class="text flex flex-col justify-center items-center gap-[2em] md:px-[9em]">
+            <h2 class="text-3xl font-semibold text-center md:text-4xl  lg:text-6xl">Listen. Learn. Laugh. Anytime, Anywhere</h2>
+            <p class="italic text-center px-[2em] md:px-[3em]">Discover the world’s best podcasts, curated just for you. Stream seamlessly, download for offline listening, and stay connected to your favorite creators</p>
+          </div>
+          <div class="btns w-full flex flex-col justify-center items-center gap-[2em] md:flex-row">
+            <button class="bg-white text-black font-semibold w-[50%] md:w-[25%] h-[2.5em] rounded-md md:rounded-full cursor-pointer border-[0.3px] border-white hover:bg-transparent hover:text-white transition-all 0.3s ease-out uppercase">Start Listening</button>
+            <p class="underline underline-offset-[0.3em] cursor-pointer"
+            >Explore Podcasts →</p>
+          </div>
+        </div>
+        <div class="right w-full h-1/2 lg:w-1/2 lg:h-full flex flex-col justify-center items-center gap-[2em] ">
+          <div class="w-[90%] h-[80%] md:w-[60%] bg-white/30 flex flex-col gap-[1em] p-[1em] rounded-xl lg:h-[60%]">
+            <div class="top w-full h-[60%] rounded-xl">
+              <video src="https://videos.pexels.com/video-files/6953428/6953428-sd_960_506_25fps.mp4" class="w-full h-full rounded-xl" controls autoplay></video>
+            </div>
+            <div class="bottom w-full h-[40%] text-center bg-white/70 flex flex-col rounded-xl justify-center items-center">
+              <p class="italic font-medium">"Over 1 Million Episodes. Unlimited Inspiration"</p>
+              <p class="italic font-medium">"Available on iOS, Android, and Web"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page1 w-full py-[4em]">
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-8">Latest AudioEpisodes</h2>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
+                  🎙️
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">The Power of Mindset</h3>
+                  <p class="text-gray-600 text-sm">Explore how your mindset shapes your success with actionable insights and expert advice.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between sm:justify-end sm:space-x-4 w-full sm:w-auto">
+                <span class="text-gray-500">42:15</span>
+                <button class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">Play</button>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
+                  🎙️
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Tech Trends 2025</h3>
+                  <p class="text-gray-600 text-sm">A deep dive into emerging technologies that will shape our future.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between sm:justify-end sm:space-x-4 w-full sm:w-auto">
+                <span class="text-gray-500">36:10</span>
+                <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">Play</button>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">
+                  🎙️
+                </div>
+                <div>
+                  <h3 class="text-2xl font-semibold">Healthy Living Tips</h3>
+                  <p class="text-gray-600 text-sm">Learn simple yet effective tips to boost your health and wellness.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between sm:justify-end sm:space-x-4 w-full sm:w-auto">
+                <span class="text-gray-500">29:45</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Play</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-8">Latest Video Episodes</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <div class="relative">
+                <video class="w-full rounded-lg" controls>
+                  <source src="https://videos.pexels.com/video-files/7599373/7599373-sd_960_506_25fps.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <span class="absolute top-2 right-2 bg-black bg-opacity-50 text-white text-xs py-1 px-2 rounded">12:45</span>
+              </div>
+              <h3 class="text-2xl font-semibold mt-4">Comedy Highlights of 2023</h3>
+              <p class="text-gray-600 text-sm mt-2">Laugh out loud with the best comedy moments of the year.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <div class="relative">
+                <video class="w-full rounded-lg" controls>
+                  <source src="https://videos.pexels.com/video-files/7586536/7586536-sd_640_360_24fps.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <span class="absolute top-2 right-2 bg-black bg-opacity-50 text-white text-xs py-1 px-2 rounded">18:30</span>
+              </div>
+              <h3 class="text-2xl font-semibold mt-4">Behind the Mic: The Life of a Comedian</h3>
+              <p class="text-gray-600 text-sm mt-2">A sneak peek into the daily life of stand-up comedians.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <div class="relative">
+                <video class="w-full rounded-lg" controls>
+                  <source src="https://videos.pexels.com/video-files/6878732/6878732-sd_960_506_25fps.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <span class="absolute top-2 right-2 bg-black bg-opacity-50 text-white text-xs py-1 px-2 rounded">25:00</span>
+              </div>
+              <h3 class="text-2xl font-semibold mt-4">Stand-Up Special: Live at the Apollo</h3>
+              <p class="text-gray-600 text-sm mt-2">Enjoy the hilarious performances straight from the stage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="page3 w-full bg-[url('https://img.freepik.com/free-photo/black-silver-microphone-black-background_87358-31.jpg?t=st=1736435191~exp=1736438791~hmac=f7a3495887c847f5bd7b86eddc59b793d7cd4034490ff75229018a1a9037894f&w=1380')] bg-cover">
+      <section class="py-16 bg-gra-50">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-8 text-white">Unlock Exclusive Content</h2>
+          <p class="text-center text-white mb-12">Choose the plan that suits you and dive deeper into exclusive podcasts, behind-the-scenes, and more.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 lg:flex lg:flex-col lg:justify-between hover:bg-white/30 hover:text-white transition-all 0.4s ease-out text-gray-800">
+              <div class="text">
+                <h3 class="text-2xl font-semibold mb-4">Basic Plan</h3>
+                <p class="mb-6">Access to selected exclusive episodes and bonus content.</p>
+                <div class="font-bold text-3xl mb-6">$5<span class="text-sm font-normal">/month</span></div>
+                <ul class="mb-6 space-y-2">
+                  <li>🎧 Exclusive Episodes</li>
+                  <li>📜 Early Access</li>
+                </ul>
+              </div>
+              <button class="w-full bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600 transition">Subscribe</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 lg:flex lg:flex-col lg:justify-between hover:bg-white/30 hover:text-white transition-all 0.4s ease-out text-gray-800">
+              <div class="text">
+                <h3 class="text-2xl font-semibold mb-4">Standard Plan</h3>
+                <p class="mb-6">Unlock all exclusive content and behind-the-scenes stories.</p>
+                <div class="font-bold text-3xl mb-6">$10<span class="text-sm font-normal">/month</span></div>
+                <ul class="mb-6 space-y-2 ">
+                  <li>🎧 Exclusive Episodes</li>
+                  <li>📜 Early Access</li>
+                  <li>🎥 Behind-the-Scenes Videos</li>
+                </ul>
+              </div>
+              <button class="w-full bg-purple-500 text-white py-2 rounded-md hover:bg-purple-600 transition">Subscribe</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 lg:flex lg:flex-col lg:justify-between hover:bg-white/30 hover:text-white transition-all 0.4s ease-out ">
+              <h3 class="text-2xl font-semibold mb-4">Premium Plan</h3>
+              <p class="mb-6">All benefits plus live Q&A sessions with podcast hosts.</p>
+              <div class="font-bold text-3xl mb-6">$20<span class="text-sm font-normal">/month</span></div>
+              <ul class="mb-6 space-y-2 ">
+                <li>🎧 Exclusive Episodes</li>
+                <li>📜 Early Access</li>
+                <li>🎥 Behind-the-Scenes Videos</li>
+                <li>💬 Live Q&A Sessions</li>
+              </ul>
+              <button class="w-full bg-pink-500 text-white py-2 rounded-md hover:bg-pink-600 transition">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>      
+    </div>
+
+    <footer class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-10 text-center items-center">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-between lg:justify-between lg:text-center">
+          <div class="w-full lg:w-1/3 mb-6 lg:mb-0">
+            <h2 class="text-3xl font-bold lg:text-left">PodSphere</h2>
+            <p class="mt-4 text-sm lg:text-left">
+              Discover, explore, and enjoy the world’s best podcasts. Your journey to inspiration, laughter, and knowledge starts here.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/3 mb-6 lg:mb-0">
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#about" class="hover:underline">About Us</a></li>
+              <li><a href="#episodes" class="hover:underline">Episodes</a></li>
+              <li><a href="#blog" class="hover:underline">Blog</a></li>
+              <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+    
+          <div class="w-full lg:w-1/3">
+            <h3 class="text-lg font-semibold mb-4">Stay Connected</h3>
+            <div class="flex space-x-4 mb-6 items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 4.56c-.89.39-1.85.65-2.85.77a4.94 4.94 0 002.17-2.72 9.83 9.83 0 01-3.13 1.2 4.92 4.92 0 00-8.4 4.48A14 14 0 011.67 3.15a4.92 4.92 0 001.52 6.56 4.85 4.85 0 01-2.23-.61v.06a4.93 4.93 0 003.95 4.83 4.92 4.92 0 01-2.22.08 4.92 4.92 0 004.6 3.43A9.87 9.87 0 010 19.54a13.91 13.91 0 007.55 2.21c9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63A9.98 9.98 0 0024 4.56z"></path>
+                </svg>
+              </a>
+              <a href="#" class="text-white hover:text-gray-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.75V1.75C24 .78 23.21 0 22.23 0zM7.19 20.45H3.64V9.01h3.55v11.44zM5.41 7.61c-1.14 0-2.06-.93-2.06-2.06S4.27 3.49 5.41 3.49s2.06.93 2.06 2.06-1.02 2.06-2.06 2.06zm15.04 12.84h-3.56v-5.56c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.93v5.65h-3.56V9.01h3.42v1.56h.05c.48-.92 1.65-1.89 3.4-1.89 3.64 0 4.31 2.39 4.31 5.49v6.28z"></path>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="inline-block bg-white text-indigo-500 py-2 px-4 rounded-full font-semibold shadow-md hover:bg-gray-200">
+                Get the App
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="mt-8 border-t border-white border-opacity-20 pt-4">
+          <p class="text-center text-sm text-white opacity-80">
+            &copy; 2025 PodSphere. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+</body>
+</html>
